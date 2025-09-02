@@ -1,10 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
     <title>간단한 계산기</title>
     <style>
-        body { font-family: sans-serif }
+        body { font-family: sans-serif; }
         .container {
             width: 350px;
             margin: 50px auto;
@@ -33,6 +33,7 @@
     </style>
 </head>
 <body>
+
 <div class="container">
     <h2>JSP 계산기</h2>
     <form action="calc-result.jsp" method="get">
@@ -43,7 +44,7 @@
 
         <div class="form-group">
             <label for="operator">연산자:</label>
-            <select name="operator" id="operator">
+            <select id="operator" name="operator">
                 <option value="+">+</option>
                 <option value="-">-</option>
                 <option value="*">*</option>
@@ -53,11 +54,12 @@
 
         <div class="form-group">
             <label for="num2">두 번째 숫자:</label>
-            <input type="number" name="num2" id="num2" required>
+            <input type="number" id="num2" name="num2" required>
         </div>
 
         <input type="submit" value="계산하기">
     </form>
 </div>
+
 </body>
 </html>
